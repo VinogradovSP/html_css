@@ -1,0 +1,221 @@
+*
+    padding: 0
+    margin: 0
+
+.contaner
+    max-width: 950px
+    padding: 0 30px
+    margin: 0 auto
+
+h3
+    font-family: 'Gilroy-Bold'
+    font-size: 34px
+    line-height: 42px
+    text-align: center
+    color: #070707
+p
+    font-family: 'Gilroy-Medium'
+    font-size: 18px
+    line-height: 22px
+    text-align: center
+    color: #070707
+
+.nav_menu
+    border-bottom: 1px solid #828282
+    min-height: 87px
+    align-items: center
+    display: flex
+    justify-content: space-between
+    &__linck
+        text-decoration: none
+        font-family: 'Gilroy-Bold'
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #828282
+        &:hover
+            color: #070707
+
+.little_block
+    display: none
+
+.description
+    margin-top: 40px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: end
+    &__h1
+        font-family: 'Gilroy-Bold'
+        font-size: 47px
+        line-height: 58px
+        color: #070707
+    &__p
+        text-align: start
+    &__menu
+        display: none
+        width: 60px
+        align-self: start
+        margin-top: 15px
+
+    &__language
+        writing-mode: vertical-rl
+        transform: rotate(180deg)
+        font-family: 'Gilroy-Bold'
+        font-size: 16px
+        line-height: 20px
+        color: #828282
+        &_span:hover
+            color: #070707
+
+.img
+    margin-top: 30px
+    min-width: 100%
+    min-height: 387px
+    background-image: url(../img/d1.png)
+    background-repeat: no-repeat
+    background-size: 100%
+
+.text_section
+    background: #F6F6F6
+    margin-top: 105px
+    padding: 7% 0
+    &__article
+        display: flex
+        flex-direction: column
+        max-width: 385px
+        min-height: 260px
+        justify-content: space-between
+        margin: 0 auto
+        padding-top: 25px
+
+.programs_section
+    margin-top: 91px
+    &__article
+        margin-top: 70px
+        &_p
+            font-family: 'Gilroy-Bold'
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #828282
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-top: 84px
+        &_pro
+            min-height: 210px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+
+.portfolio_section
+    margin-top: 15%
+    padding: 10% 0
+    background: #F6F6F6
+    &__img
+        margin: 47px 0 45px
+        width: 100%
+    &__reebok
+        margin: 99px 0 45px
+        width: 100%
+    &__p
+        text-decoration-line: underline
+
+.footer
+    margin: 7% auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__h3
+        margin: 2% 0
+    &__button
+        margin: 29px 0 86px 0
+        border-radius: 25px
+        font-family: 'Gilroy-Bold'
+        font-size: 18px
+        line-height: 22px
+        text-align: center
+        color: #FFFFFF
+        background: #070707
+        padding: 10px 30px
+    &__messengers
+        width: 340px
+        margin-bottom: 46px
+        display: flex
+        justify-content: space-between
+    &__p
+        font-family: 'Gilroy-Medium'
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #828282
+
+@media (max-width: 750px)
+
+    .programs_section__block
+        flex-direction: column
+
+    .programs_section__block_pro
+        margin-bottom: 81px
+
+    .img
+        background-image: url(../img/denis.png)
+
+@media (max-width: 376px)
+
+    .footer__button, .footer__messengers
+        width: 100%
+
+    .img
+        background-size: auto
+
+    .nav_menu
+        display: none
+
+    .description
+        margin-top: 65px
+        &__menu
+            display: block
+            &:hover .description__hidden
+                display: flex
+        &__hidden
+            display: none
+            justify-content: space-between
+            min-height: 750px
+            position: absolute
+            top: 0
+            left: 29px
+            width: 85%
+            margin-top: 66px
+            background: #FFFFFF
+            z-index: 1
+            &_nav
+                display: flex
+                flex-direction: column
+                &__linck
+                    margin-bottom: 68px
+                    font-family: 'Gilroy-Bold'
+                    font-size: 34px
+                    line-height: 42px
+                    color: #828282
+                    text-decoration: none
+                    &:hover
+                        color: #070707
+            &_language
+                display: flex
+                justify-content: space-between
+                writing-mode: vertical-rl
+                height: 80%
+
+        &__span
+            font-family: 'Gilroy-Bold'
+            font-size: 34px
+            line-height: 42px
+            color: #828282
+            &_txt:hover
+                color: #070707
+
+        &__language
+            display: none
