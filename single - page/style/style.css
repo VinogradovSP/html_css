@@ -117,6 +117,7 @@ p {
 }
 
 .text_section {
+  width: 100%;
   background: #F6F6F6;
   margin-top: 105px;
   padding: 7% 0;
@@ -196,11 +197,6 @@ p {
 .portfolio_section__reebok {
   margin: 99px 0 45px;
   width: 100%;
-}
-
-.portfolio_section__p {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
 }
 
 .footer {
