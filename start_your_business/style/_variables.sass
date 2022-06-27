@@ -1,0 +1,81 @@
+@mixin all-text ($ff, $fw, $fs, $lh, $col)
+    font-family: $ff
+    font-weight: $fw
+    font-size: $fs
+    line-height: $lh
+    color: $col
+
+@mixin small-text
+    font-family: 'Prompt'
+    font-weight: 400
+    font-size: 18px
+    line-height: 25px
+    color: #2D2B5C
+
+@mixin big-text
+    font-family: 'Poppins'
+    font-weight: 400
+    font-size: 70px
+    line-height: 77px
+    color: #1A1930
+
+.contaner
+    max-width: 1440px
+    margin: 0 auto
+    padding: 0 70px
+
+.button
+    width: 139px
+    height: 60px
+    @include all-text ('Prompt', 400, 16px, 22px, #1A1930)
+    border-radius: 5px
+    transition-duration: 0.6s
+    &_white
+        background: #ffffff66
+        border: 2px solid #ffffff66
+        box-shadow: 0px 4px 20px #c1c1c14d
+        &:hover
+            background: #6259EA
+            color: white
+            border: transparent
+    &_blue
+        background: #6259EA
+        color: white
+        border: transparent
+        &:hover
+            background: #ffffff66
+            color: #1A1930
+            border: transparent
+    &_width
+        min-width: 217px
+    &:hover
+        box-shadow: -5px 7px 10px 0px #c4ddea
+    &_self
+        align-self: end
+
+.hr
+    height: 2px
+    background: #E7E5FF
+    border: transparent
+    &__grow
+        flex-grow: 1
+
+.next
+    width: 45px
+    height: 45px
+    background: #FBFBFF
+    box-shadow: 0px 4px 20px #c1c1c14d
+    border-radius: 5px
+
+.square
+    display: flex
+    align-items: center
+    &_block
+        width: 14px
+        height: 14px
+        background: #EA5959
+        margin-right: 10px
+    &_p
+        @include small-text
+        color: #1A1930
+        text-transform: uppercase

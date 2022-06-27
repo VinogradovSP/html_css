@@ -26,7 +26,7 @@ p
     align-items: center
     display: flex
     justify-content: space-between
-    &__linck
+    .linck
         text-decoration: none
         font-family: 'Gilroy-Bold'
         font-size: 18px
@@ -36,29 +36,26 @@ p
         &:hover
             color: #070707
 
-.little_block
-    display: none
-
 .description
     margin-top: 40px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     align-items: end
-    &__h1
+    &_h1
         font-family: 'Gilroy-Bold'
         font-size: 47px
         line-height: 58px
         color: #070707
-    &__p
+    &_p
         text-align: start
-    &__menu
+    &_menu
         display: none
         width: 60px
         align-self: start
         margin-top: 15px
 
-    &__language
+    &_language
         writing-mode: vertical-rl
         transform: rotate(180deg)
         font-family: 'Gilroy-Bold'
@@ -81,7 +78,7 @@ p
     background: #F6F6F6
     margin-top: 105px
     padding: 7% 0
-    &__article
+    .article
         display: flex
         flex-direction: column
         max-width: 385px
@@ -92,7 +89,7 @@ p
 
 .programs_section
     margin-top: 91px
-    &__article
+    &_article
         margin-top: 70px
         &_p
             font-family: 'Gilroy-Bold'
@@ -100,7 +97,7 @@ p
             line-height: 17px
             text-align: center
             color: #828282
-    &__block
+    &_block
         display: flex
         justify-content: space-between
         margin-top: 84px
@@ -115,10 +112,10 @@ p
     margin-top: 15%
     padding: 10% 0
     background: #F6F6F6
-    &__img
+    &_img
         margin: 47px 0 45px
         width: 100%
-    &__reebok
+    &_reebok
         margin: 99px 0 45px
         width: 100%
 
@@ -153,10 +150,10 @@ p
 
 @media (max-width: 750px)
 
-    .programs_section__block
+    .programs_section_block
         flex-direction: column
 
-    .programs_section__block_pro
+    .programs_section_block_pro
         margin-bottom: 81px
 
     .img
@@ -175,14 +172,14 @@ p
 
     .description
         margin-top: 65px
-        &__menu
+        &_menu
             display: block
-            &:hover .description__hidden
+            &:hover .hidden
                 display: flex
-        &__hidden
+        .hidden
             display: none
             justify-content: space-between
-            min-height: 750px
+            height: 680px
             position: absolute
             top: 0
             left: 29px
@@ -193,7 +190,7 @@ p
             &_nav
                 display: flex
                 flex-direction: column
-                &__linck
+                &_linck
                     margin-bottom: 68px
                     font-family: 'Gilroy-Bold'
                     font-size: 34px
@@ -206,15 +203,15 @@ p
                 display: flex
                 justify-content: space-between
                 writing-mode: vertical-rl
-                height: 80%
+                height: 98%
 
-        &__span
-            font-family: 'Gilroy-Bold'
-            font-size: 34px
-            line-height: 42px
-            color: #828282
-            &_txt:hover
-                color: #070707
+            &_span
+                font-family: 'Gilroy-Bold'
+                font-size: 34px
+                line-height: 42px
+                color: #828282
+                &_txt:hover
+                    color: #070707
 
-        &__language
+        &_language
             display: none

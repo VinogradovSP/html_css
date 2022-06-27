@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Prompt&display=swap')
+
+@import "variables"
+
+*
+    margin: 0
+    padding: 0
+
+.header
+    margin-top: 40px
+    position: relative
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        &_linck
+            @include small-text
+            text-decoration: none
+            margin: 0 12px
+    &__img
+        position: absolute
+        top: -40px
+        right: -70px
+        z-index: -1
+    &__section
+        margin-top: 120px
+        &_h2
+            @include all-text ('Poppins', 400, 80px, 88px, #1A1930)
+        &_p
+            @include all-text ('Prompt', 400, 30px, 42px, #2D2B5C)
+            margin: 60px 0 52px 0
+
+    &__bottom
+        display: flex
+        margin: 74px 0 114px
+        align-items: end
+        justify-content: space-between
+        &_right
+            display: flex
+            height: 120px
+            flex-direction: column
+            justify-content: space-between
+    .line
+        height: 180px
+        background: #E7E5FF
+        position: absolute
+        width: 100%
+        z-index: -2
+        &__block
+            display: flex
+            justify-content: space-around
+            align-items: center
+            height: 100%
+
+.numbers
+    display: flex
+    justify-content: space-between
+    height: 738px
+    position: relative
+    max-width: 1440px
+    margin: 294px auto 0
+    padding-left: 70px
+    &__background
+        position: absolute
+        top: -110px
+        left: 0
+        width: 688px
+        height: 842px
+        background-image: url(../img/triangles.png)
+        background-repeat: no-repeat
+        z-index: -1
+    &__left
+        margin-top: 100px
+        &_p
+            @include small-text
+            text-transform: uppercase
+        &_h3
+            @include big-text
+            color: #2D2B5C
+    &__right
+        margin-top: 172px
+        .clients
+            display: flex
+            justify-content: space-between
+            width: 820px
+            min-height: 170px
+            align-items: center
+            padding-right: 70px
+            &__block
+                max-width: 383px
+                &_h4
+                    @include all-text ('Prompt', 400, 30px, 42px, #1A1930)
+                &_p
+                    @include small-text
+                    margin-top: 20px
+            &__num
+                @include all-text ('Prompt', 400, 80px, 112px, #2D2B5C)
+
+.features
+    min-height: 978px
+    &__top
+        display: flex
+        justify-content: space-between
+        margin: 89px 0 167px
+        &_h2
+            max-width: 553px
+            @include big-text
+            color: #2D2B5C
+    &__low
+        max-width: 1300px
+        display: flex
+        justify-content: space-between
+        background: #ffffff99
+        border: 1px solid #FBFBFF
+        box-shadow: 0px 4px 20px #c1c1c14d
+        border-radius: 10px
+        padding: 44px 50px
+        .element
+            position: relative
+            max-width: 320px
+            &_h4
+                @include all-text ('Poppins', 400, 34px, 38px, #1A1930)
+            &_p
+                @include small-text
+                margin: 23px 0 29px
+            &_item
+                display: flex
+                margin-bottom: 14px
+                &_p
+                    @include small-text
+                    color: #1A1930
+                    margin-left: 22px
+            &__simple
+                position: absolute
+                z-index: -1
+                top: -50px
+                left: -115px
+            &__customizable
+                position: absolute
+                z-index: -1
+                top: 180px
+                left: -50px
+            &__stylish
+                position: absolute
+                z-index: -1
+                top: -130px
+                left: -10px
+
+.video
+    margin-top: 43px
+    &_h3
+        @include all-text ('Poppins', 400, 44px, 50px, #2D2B5C)
+        max-width: 473px
+        margin-bottom: 86px
+    &_play
+        width: 100%
+
+.technologies
+    margin-top: 193px
+    &__top
+        display: flex
+        align-items: center
+        padding-right: 0
+    &_h3
+        @include all-text ('Poppins', 400, 45px, 50px, #1A1930)
+        max-width: 468px
+        margin-right: 82px
+    &__low
+        display: flex
+        margin-top: 50px
+        padding-left: 0
+        &_img
+            margin-right: 70px
+            width: 40%
+        &_h4
+            margin-bottom: 53px
+            @include all-text ('Poppins', 400, 35px, 38px, #2D2B5C)
+        &_p
+            @include small-text
+            margin-top: 19px
+            max-width: 704px
+        &_square
+            margin-top: 51px
+
+.reuse
+    margin-top: 43px
+    &__top
+        display: flex
+        align-items: center
+        padding-left: 0
+        &_h3
+            @include all-text ('Poppins', 400, 45px, 50px, #1A1930)
+            padding-right: 70px
+            margin-left: 121px
+    &__low
+        display: flex
+        margin-top: 50px
+    &__img
+        margin-left: 8%
+
+.price
+    margin-top: 94px
+    &__pancake
+        position: absolute
+        top: -40px
+        left: 0
+        z-index: -2
+    &__expander
+        position: absolute
+        top: 340px
+        right: 0
+        z-index: -2
+    &__top
+        display: flex
+        align-items: center
+        position: relative
+        padding-right: 0
+        &_h2
+            @include big-text
+            margin-right: 165px
+    &__low
+        display: flex
+        justify-content: space-between
+        margin-top: 91px
+        &_block
+            background: #ffffff99
+            border: 2px solid #ffffff66
+            box-shadow: 0px 4px 20px #c1c1c14d
+            border-radius: 10px
+            padding: 45px 52px 64px 52px
+            width: 41%
+        &_h4
+            @include all-text ('Poppins', 400, 44px, 50px, #2D2B5C)
+            margin-bottom: 44px
+        &_linck
+            @include small-text
+            color: #1A1930
+            list-style-image: url(../img/check.svg)
+            margin: 9px 0 0 25px
+            padding-left: 24px
+        &_inactive
+            color: #ABAABB
+        &_number
+            display: flex
+            margin-top: 34px
+        &_h2
+            @include all-text ('Prompt', 400, 79px, 88px, #2D2B5C)
+        &_span
+            @include small-text
+            color: #ABAABB
+            align-self: end
+            margin-right: 178px
+
+.team
+    margin-top: 139px
+    &__top
+        display: flex
+        justify-content: space-between
+        &_h2
+            @include big-text
+            max-width: 512px
+            margin-right: 423px
+    &__low
+        margin-top: 101px
+        display: flex
+        align-items: center
+        .people
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            &__card
+                display: flex
+                flex-direction: column
+                max-width: 220px
+                margin: 0 33px 21px
+                &_name
+                    @include all-text ('Prompt', 400, 20px, 22px, #1A1930)
+                    text-align: center
+                    margin: 16px 0 12px
+                &_profession
+                    @include small-text
+                    text-align: center
+
+.questions
+    margin-top: 200px
+    padding-left: 70px
+    position: relative
+    max-width: 1440px
+    margin: 200px auto 0
+    &__img
+        position: absolute
+        top: 0
+        right: 0
+    &__h2
+        @include big-text
+        max-width: 606px
+        margin-bottom: 165px
+    &__block
+        display: flex
+        align-items: center
+        margin: 30px 0 48px
+    &__h3
+        @include all-text ('Poppins', 400, 44px, 50px, #2D2B5C)
+        margin-left: 3%
+        max-width: 710px
+
+.talk
+    min-height: 974px
+    margin-top: 106px
+    &__top
+        display: flex
+        align-items: center
+        max-width: 1440px
+        margin: 0 auto
+        padding: 89px 0 0 70px
+    &_h2
+        @include big-text
+        max-width: 386px
+        margin-right: 164px
+    &__low
+        margin-top: 71px
+        background: #ffffff66
+        border: 1px solid #ffffff66
+        box-shadow: 0px 4px 20px #c1c1c14d
+        border-radius: 10px
+        display: flex
+        position: relative
+        &_big
+            position: absolute
+            top: -410px
+            left: -100px
+            z-index: -1
+        &_small
+            position: absolute
+            bottom: -50px
+            right: 270px
+            z-index: -1
+        .face
+            margin: 51px 50px 0 111px
+            max-width: 200px
+            &__networks
+                display: flex
+                justify-content: space-evenly
+                margin-top: 32px
+        .name
+            display: flex
+            justify-content: space-between
+            margin-top: 120px
+            &_h4
+                @include all-text ('Prompt', 400, 39px, 25px, #1A1930)
+                span
+                    @include small-text
+                    color: #ABAABB
+            &__description
+                max-width: 830px
+                @include all-text ('Prompt', 400, 30px, 42px, #2D2B5C)
+                margin-top: 76px
+                &_img
+                    text-align: end
+                    margin: 20px 0 80px
+
+.press
+    margin-top: 39px
+    &__top
+        display: flex
+        justify-content: space-between
+        &_h2
+            @include big-text
+    &__low
+        display: flex
+        justify-content: space-between
+        max-width: 1440px
+        margin: 71px auto 0
+        padding-left: 70px
+        .item
+            display: flex
+            flex-direction: column
+            max-width: 418px
+            &_img
+                max-height: 318px
+            &__button
+                margin: 30px 0 16px
+                @include all-text ('Prompt', 400, 15px, 22px, #2D2B5C)
+                border: transparent
+                align-self: start
+                padding: 3px 25px 4px
+            &_h4
+                @include all-text ('Poppins', 400, 35px, 42px, #1A1930)
+                margin-bottom: 38px
+                &_last
+                    white-space: nowrap
+                    // overflow: hidden
+        .border
+            border-left: 4px solid #E7E5FF
+
+.contact
+    margin-top: 229px
+
+    &__pancake
+        position: absolute
+        top: -40px
+        left: 0
+        z-index: -2
+    &__expander
+        position: absolute
+        top: 130px
+        right: 0
+        z-index: -2
+    &__top
+        display: flex
+        align-items: center
+        position: relative
+        padding-right: 0
+        &_h2
+            @include big-text
+            margin-right: 164px
+    &__low
+        display: flex
+        justify-content: space-between
+        margin-top: 59px
+        padding: 0 70px
+        .right
+            display: flex
+            flex-direction: column
+            align-self: end
+            &__ul
+                @include small-text
+                max-width: 459px
+                list-style-type: none
+                position: relative
+                &_linck::before
+                    content: "* "
+                    position: absolute
+                    top: 0
+                    left: -15px
+                &_none
+                    margin: 19px 0 51px
+                    color: #ABAABB
+        .form
+            width: 47%
+            .label
+                @include small-text
+            .input
+                width: 95%
+                min-height: 55px
+                margin: 11px 0 18px
+                background: #ffffff66
+                border: 2px solid #ffffff66
+                box-shadow: 0px 4px 20px #c1c1c14d
+                border-radius: 8px
+                outline: 0
+                padding-left: 32px
+                &__textarea
+                    max-height: 100px
+            &__button
+                margin: 50px 0
+                width: 100%
+
+.media
+    margin-top: 89px
+    &__top
+        display: flex
+        justify-content: space-between
+        &_h2
+            @include big-text
+    &__block
+        display: flex
+        justify-content: space-between
+        margin-top: 81px
+        align-items: center
+        &_items
+            display: flex
+            justify-content: center
+        &_img
+            max-width: 200px
+            max-height: 200px
+
+.footer
+    margin-top: 104px
+    background: #1A1930
+
+    &_blocks
+        display: flex
+        padding-right: 0
+    &__right
+        padding-top: 85px
+        margin-right: 207px
+    .text_title
+        @include small-text
+        color: #FFFFFF
+        margin-top: 38px
+    .text_email
+        @include all-text('Prompt', 400, 20px, 22px, #FFFFFF)
+        margin-top: 7px
+    .text_made
+        @include all-text('Prompt', 400, 14px, 20px, #FFFFFF)
+        margin-top: 13px
+        &::after
+            content: " "
+            width: 20px
+            height: 20px
+            background: url(../img/🇺🇦.png) bottom no-repeat
+            display: inline-block
+    .text_low
+        @include all-text('Prompt', 400, 14px, 20px, #FFFFFF)
+        margin: 88px 0 67px
+    &__span
+        color: #6259EA
+
+    &__left
+        margin: 100px 0 58px
+        flex-grow: 1
+        padding: 0
+        position: relative
+        &_item
+            display: flex
+            margin: 60px 0
+        &_img
+            position: absolute
+            top: -110px
+            right: 0
+    &__menu
+        width: 25%
+        &_a
+            text-decoration: none
+            display: block
+            @include small-text
+            color: #FFFFFF
+            margin-top: 9px
+
+.scrollup
+    width: 40px
+    height: 40px
+    opacity: 0.3
+    position: fixed
+    bottom: 50px
+    right: 100px
+    display: none
+    text-indent: -9999px
+    background: url('../img/icon_top.png') no-repeat
